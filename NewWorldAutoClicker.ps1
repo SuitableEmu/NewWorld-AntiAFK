@@ -1,4 +1,6 @@
 # Made by https://github.com/SuitableEmu
+param($minutes = 9999999)
+$wsh = New-Object -ComObject Wscript.Shell
 for ($i = 0; $i -lt $minutes; $i++) {
 (New-Object -ComObject WScript.Shell).AppActivate((get-process NewWorld).MainWindowTitle)
 Add-Type -MemberDefinition '[DllImport("user32.dll")] public static extern void mouse_event(int flags, int dx, int dy, int cButtons, int info);' -Name U32 -Namespace W;
