@@ -1,1 +1,0 @@
-Powershell.exe -ExecutionPolicy Bypass -File D:\Documents\Scripts\NewWorld.ps1
