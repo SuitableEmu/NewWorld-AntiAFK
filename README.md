@@ -1,4 +1,4 @@
-# NewWorldAFK
+# NewWorld-AntiAFK
 New World Anti-AFK
 Launches New World and keeps you afk.
 Lets you still use the PC while it's running. Will tab you in and out of game every 15 minutes to keep you in the game.
