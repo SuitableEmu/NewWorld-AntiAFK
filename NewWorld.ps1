@@ -43,9 +43,7 @@ function Start-Sleep($seconds) {
 for ($i = 0; $i -lt $minutes; $i++) {
 (Get-Process -Name NewWorld).MainWindowHandle | foreach { Set-WindowStyle MAXIMIZE $_ }
 (New-Object -ComObject WScript.Shell).AppActivate((get-process NewWorld).MainWindowTitle)
-#import mouse_event
 Add-Type -MemberDefinition '[DllImport("user32.dll")] public static extern void mouse_event(int flags, int dx, int dy, int cButtons, int info);' -Name U32 -Namespace W;
-#left mouse click
 [W.U32]::mouse_event(6,0,0,0,0);
 Start-Sleep 2
 (Get-Process -Name NewWorld).MainWindowHandle | foreach { Set-WindowStyle MINIMIZE $_ }
