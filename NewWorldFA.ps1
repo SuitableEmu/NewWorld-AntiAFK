@@ -1,4 +1,5 @@
-﻿param($minutes = 9999999)
+# Made by https://github.com/SuitableEmu/
+param($minutes = 9999999)
 $Game = "steam://rungameid/1063730"
 $Cursor = [system.windows.forms.cursor]::clip
 #import mouse_event
