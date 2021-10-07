@@ -1,6 +1,7 @@
 # Made by https://github.com/SuitableEmu
 param($minutes = 9999999)
 $wsh = New-Object -ComObject Wscript.Shell
+# You can comment out this part if you do not need it. Line 5-33 {
 function Set-WindowStyle {
 param(
     [Parameter()]
@@ -29,6 +30,7 @@ param(
 
     $Win32ShowWindowAsync::ShowWindowAsync($MainWindowHandle, $WindowStates[$Style]) | Out-Null
 }
+#}
 function Start-Sleep($seconds) {
     $doneDT = (Get-Date).AddSeconds($seconds)
     while($doneDT -gt (Get-Date)) {
