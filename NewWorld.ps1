@@ -1,4 +1,5 @@
-﻿param($minutes = 9999999)
+# Made by https://github.com/SuitableEmu
+param($minutes = 9999999)
 $wsh = New-Object -ComObject Wscript.Shell
 function Set-WindowStyle {
 param(
