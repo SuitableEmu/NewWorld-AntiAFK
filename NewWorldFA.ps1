@@ -48,18 +48,22 @@ function Start-Sleep($seconds) {
 Start-Process $Game 
 
 Start-Sleep 70
-[system.windows.forms.cursor]::position = New-Object System.Drawing.Point(2567,1394)
+#Replace the coordiantes X:2500 and Y:1400 with your own from Coordinates-getter.ps1
+[system.windows.forms.cursor]::position = New-Object System.Drawing.Point(2500,1400)
 Start-Sleep 5
 [W.U32]::mouse_event(6,0,0,0,0);
 Start-Sleep 5
+#Replace the coordiantes X:3000 and Y:1400 with your own from Coordinates-getter.ps1
 [system.windows.forms.cursor]::position = New-Object System.Drawing.Point(3000,1400)
 Start-Sleep 2
 [W.U32]::mouse_event(6,0,0,0,0);
 Start-Sleep 5
+#Replace the coordiantes X:3000 and Y:1400 with your own from Coordinates-getter.ps1
 [system.windows.forms.cursor]::position = New-Object System.Drawing.Point(3000,1400)
 Start-Sleep 2
 [W.U32]::mouse_event(6,0,0,0,0);
 Start-Sleep 120
+#Replace the coordiantes X:1700 and Y:800 with your own from Coordinates-getter.ps1
 [system.windows.forms.cursor]::position = New-Object System.Drawing.Point(1700,800)
 
 
