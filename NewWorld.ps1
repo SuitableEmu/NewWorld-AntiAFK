@@ -47,5 +47,6 @@ Add-Type -MemberDefinition '[DllImport("user32.dll")] public static extern void 
 [W.U32]::mouse_event(6,0,0,0,0);
 Start-Sleep 2
 (Get-Process -Name NewWorld).MainWindowHandle | foreach { Set-WindowStyle MINIMIZE $_ }
+#Change this for different time interval, it is now set for 15 minutes (60*15=900)
 Start-Sleep 900
 }
