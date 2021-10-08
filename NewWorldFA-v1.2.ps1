@@ -1,4 +1,4 @@
-﻿# Made by https://github.com/SuitableEmu/
+# Made by https://github.com/SuitableEmu/
 param($minutes = 9999999)
 $Game = "steam://rungameid/1063730"
 $Cursor = [system.windows.forms.cursor]::clip
@@ -59,7 +59,8 @@ Start-Sleep 900
 }
 
 $NewWorld = Get-Process NewWorld -ErrorAction SilentlyContinue
-if (($NewWorld) | Write-Host "New World is running...") {
+if ($NewWorld){
+Write-Host "New World is running..."
 Start-Loop
     }
   else {
