@@ -54,7 +54,7 @@ for ($i = 0; $i -lt $minutes; $i++) {
 Start-Sleep 2
 (Get-Process -Name NewWorld).MainWindowHandle | foreach { Set-WindowStyle MINIMIZE $_ }
 #Change this for different time interval, it is now set for 15 minutes (60*15=900)
-Start-Sleep 5
+Start-Sleep 900
     }
 }
 
